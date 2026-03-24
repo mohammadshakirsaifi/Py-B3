@@ -16,6 +16,31 @@ A comprehensive demonstration of Python functions and modules with factorial cal
 - [Author](#author)
 
 ---
+```md
+python-functions-modules/
+│
+├── task1_factorial.py          # Task 1: Factorial calculator
+├── task2_math_operations.py    # Task 2: Math module operations
+├── task3_combined.py           # Optional combined program
+├── math_functions.py           # Optional custom math module
+├── README.md                   # Project documentation
+├── requirements.txt            # Dependencies (none required)
+└── screenshots/                # Screenshots folder
+    ├── task1_input.png
+    ├── task1_factorial_5.png
+    ├── task1_factorial_0.png
+    ├── task1_error.png
+    ├── task1_sequence.png
+    ├── task2_input.png
+    ├── task2_positive.png
+    ├── task2_negative.png
+    ├── task2_additional.png
+    ├── task2_constants.png
+    ├── task2_decimal.png
+    ├── combined_menu.png
+    └── combined_demo.png
+```	
+	
 
 ## Project Overview
 
