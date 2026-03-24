@@ -164,3 +164,130 @@ This program demonstrates various mathematical operations:
 git clone https://github.com/yourusername/python-functions-modules.git
 cd python-functions-modules
 ```
+Verify Python installation:
+
+bash
+python --version
+No additional packages required - All programs use Python's standard library only.
+
+## Usage
+### Running Task 1: Factorial Calculator
+```bash
+python task1_factorial.py
+```
+### Running Task 2: Math Operations
+```bash
+python task2_math_operations.py
+```
+
+### Running Combined Program 
+```bash
+python task3_combined.py
+```
+## Error Handling
+
+Both programs include comprehensive error handling:
+
+### Task 1: Factorial Calculator
+
+| Scenario             | Input | Expected Behavior                                      |
+|---------------------|-------|-------------------------------------------------------|
+| Negative number      | -5    | Error: Factorial not defined for negative numbers    |
+| Non-numeric input    | abc   | Error: Invalid integer input                          |
+| Empty input          | [Enter] | Error: No input provided                             |
+| Large number (>1000) | 2000  | Graceful handling with recursion warning             |
+
+### Task 2: Math Module Operations
+
+| Scenario                        | Input   | Expected Behavior                                         |
+|---------------------------------|---------|----------------------------------------------------------|
+| Negative number for square root  | -4      | Error: Square root not defined for negative numbers      |
+| Zero or negative for logarithm  | 0       | Error: Logarithm only defined for positive numbers      |
+| Non-numeric input                | abc     | Error: Invalid number input                               |
+| Large numbers                    | 1e308   | Handled gracefully within Python's limits                |
+
+---
+
+## Learning Outcomes
+
+By completing these tasks, you will learn:
+
+- Function definition and invocation  
+- Recursive functions  
+- Importing and using modules  
+- Mathematical operations with the `math` module  
+- Error handling and input validation  
+
+---
+
+## Technologies Used
+
+- **Language:** Python 3.6+  
+- **Modules:** `math` (built-in)  
+- **Dependencies:** None required  
+
+---
+
+## Testing
+
+### Task 1: Factorial Calculator
+
+| Input | Expected Output | Status |
+|-------|----------------|--------|
+| 0     | 1              | ✓ Pass |
+| 1     | 1              | ✓ Pass |
+| 5     | 120            | ✓ Pass |
+| 10    | 3,628,800      | ✓ Pass |
+| -3    | Error message  | ✓ Pass |
+| "abc" | Error message  | ✓ Pass |
+
+### Task 2: Math Module Operations
+
+| Input   | Square Root | Logarithm | Sine   |
+|---------|------------|-----------|--------|
+| 25      | 5.0        | 3.2189    | -0.1324 |
+| 100     | 10.0       | 4.6052    | -0.5064 |
+| -4      | Error      | Error     | 0.7568  |
+| 0       | 0.0        | Error     | 0.0     |
+| 3.14159 | 1.7725     | 1.1447    | 0.0     |
+
+---
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|---------|
+| "Module not found" error | All programs use only built-in modules. Check Python installation with `python --version`. |
+| Recursion depth exceeded | For large numbers (>1000), use iterative method. Program handles this gracefully. |
+| Input validation not working | Ensure you're entering numeric values. The program will display error messages. |
+| Square root of negative number | Program displays an error message explaining that square roots of negative numbers are not real numbers. |
+| Permission denied when running Python | Ensure Python is added to PATH or use `python3` on Unix systems. |
+
+---
+
+## Author
+
+**Mohammad Shakir**  
+
+- Module: Functions & Modules in Python  
+- Course Reference: Module 4 – Functions & Modules in Python from the Python programming course  
+- Key Topics Covered:
+  - Function definition and invocation  
+  - Recursive functions  
+  - Importing and using modules  
+  - Mathematical operations with `math` module  
+  - Error handling and input validation  
+
+---
+
+## License
+
+This project is created for educational purposes as part of a Python programming assignment.
+
+---
+
+## Acknowledgments
+
+- Python Software Foundation for the excellent Python programming language  
+- Course instructors for providing clear guidelines and expectations  
+- Math module documentation for detailed function explanations  
